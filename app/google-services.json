@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "602070436502",
+    "firebase_url": "https://musico-c1a0e.firebaseio.com",
+    "project_id": "musico-c1a0e",
+    "storage_bucket": "musico-c1a0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602070436502:android:fd29ee2c3788a11d",
+        "android_client_info": {
+          "package_name": "com.example.musicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602070436502-mb7qogcrkfo91ulgcs9ibj3p165q8nha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPL4J9D0iLepH57JabZra3kbQcyAueQQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602070436502-mb7qogcrkfo91ulgcs9ibj3p165q8nha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

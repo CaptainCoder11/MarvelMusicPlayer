@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/notl"
+    android:background="#875094"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="#A2CD48"
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/hulkface" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgalb"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="#FCFCFC"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+    <TextView
+        android:layout_below="@+id/sname"
+        android:singleLine="true"
+        android:id="@+id/sartist"
+        android:ellipsize="marquee"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:textColor="#FCFCFC"
+        style="@style/TextAppearance.Compat.Notification.Info"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_14ssp"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/lnr1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgprev"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:id="@+id/imgpl_ps"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imgnext"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</RelativeLayout>

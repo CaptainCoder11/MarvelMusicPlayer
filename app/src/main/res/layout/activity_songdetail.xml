@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SongdetailActivity">
+    <RelativeLayout
+        android:id="@+id/songdetly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/songdetbackg"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="#F7FCF7"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:textSize="@dimen/_25ssp"
+            android:fontFamily="@font/source_sans_pro_bold" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_name"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#F7FCF7"
+            android:fontFamily="@font/source_sans_pro_semibold" />
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/detailseekbar"
+            android:layout_width="@dimen/_355sdp"
+            android:layout_height="@dimen/_355sdp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:cs_negative_enabled="true"
+            app:cs_circle_style="round"
+            app:cs_pointer_color="@android:color/darker_gray"
+            app:cs_circle_progress_color ="#276CF7"
+            app:cs_circle_stroke_width="@dimen/_15sdp"
+            app:cs_pointer_stroke_width="@dimen/_15sdp"
+
+             />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/song_image"
+            android:layout_width="@dimen/_266sdp"
+            android:layout_height="@dimen/_266sdp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#FF000000"/>
+
+        <com.mbh.timelyview.TimelyShortTimeView
+            android:id="@+id/ttv"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_horizontal"
+            app:rounded_corner="true" />
+
+        <ImageView
+            android:id="@+id/loop"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/ttv"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_140sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/ic_repeat"
+            android:tint="@color/white" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/coverflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttons"
+            android:layout_alignParentBottom="true"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/buttons"
+            android:layout_below="@+id/detailseekbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgprev"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:src="@drawable/prev_details"
+                android:layout_width="@dimen/_55sdp"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/_55sdp" />
+            <ImageView
+                android:id="@+id/imgplps"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp" />
+            <ImageView
+                android:id="@+id/imgnext"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:src="@drawable/next_details"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

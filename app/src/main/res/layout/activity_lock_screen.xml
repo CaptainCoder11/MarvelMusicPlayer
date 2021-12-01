@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SongdetailActivity">
+    <RelativeLayout
+        android:id="@+id/songdetly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/songdetbackg"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/chewy"
+            android:singleLine="true"
+            android:textColor="#F54437"
+            android:textSize="@dimen/_25ssp" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_name"
+            android:textSize="@dimen/_20ssp"
+            android:singleLine="true"
+            android:textColor="#3F51B5"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/chewy" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/buttons"
+            android:layout_below="@+id/detailseekbar"
+           android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgprev"
+                android:src="@drawable/prev_details"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/_35sdp" />
+            <ImageView
+                android:id="@+id/imgplps"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_35sdp" />
+            <ImageView
+                android:id="@+id/imgnext"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_gravity="right"
+                android:src="@drawable/next_details"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

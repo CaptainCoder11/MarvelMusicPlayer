@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_7sdp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgplaylist"
+        android:layout_width="@dimen/_45sdp"
+        android:src="@drawable/ic_playlist"
+        android:layout_height="@dimen/_45sdp"></ImageView>
+    <TextView
+        android:id="@+id/tvplaylist"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/holo_green_light"
+        android:text="Recently Added"
+        android:textSize="@dimen/_15ssp"
+        android:fontFamily="@font/chewy"
+        android:layout_toRightOf="@+id/imgplaylist"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_height="wrap_content"></TextView>
+</RelativeLayout>

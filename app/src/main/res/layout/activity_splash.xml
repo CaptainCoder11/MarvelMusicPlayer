@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Activity.SplashActivity">
+    <VideoView
+        android:id="@+id/videovw"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></VideoView>
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/_30sdp">
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Loading"
+            android:fontFamily="@font/chewy"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"></TextView>
+&lt;!&ndash;<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="@dimen/_50sdp"
+    app:lottie_repeatMode="restart"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_fileName="196-material-wave-loading.json"
+    android:layout_height="@dimen/_30sdp"></com.airbnb.lottie.LottieAnimationView>&ndash;&gt;
+    </LinearLayout>-->
+</RelativeLayout>

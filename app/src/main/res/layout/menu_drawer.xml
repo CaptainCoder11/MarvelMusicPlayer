@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerbackg"
+    android:layout_height="match_parent"
+    android:background="@mipmap/captaintheme"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="90dp" />
+<LinearLayout
+    android:id="@+id/info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:text="Info"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_20ssp" />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/privacypolicy"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvprivacypolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:text="Privacy Policy"
+                android:textSize="@dimen/_20ssp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/themes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tvtheme"
+            android:textColor="@color/red"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="Themes"
+            android:textSize="@dimen/_20ssp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

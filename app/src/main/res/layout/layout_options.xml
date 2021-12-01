@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/avengerswallp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/trackname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_thin"
+        android:padding="@dimen/_5sdp"
+        android:singleLine="true"
+        android:text="Aadat Se Majboor"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_20ssp"></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/_1sdp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/playnext"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_queue_play_next_24px"
+            android:tint="@color/red"
+            android:padding="@dimen/_11sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Play next"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/delete"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_delete_forever_24px"
+            android:tint="@color/red"
+            android:padding="@dimen/_11sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Delete"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp"></TextView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/standardBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="?attr/bottomSheetStyle"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

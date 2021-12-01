@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_alb"
+                    android:background="@color/translucent_black"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp">
+                </androidx.appcompat.widget.AppCompatImageView>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp">
+                        <TextView
+                            android:id="@+id/tv_album"
+                            android:text="Album"
+                            android:padding="@dimen/_3sdp"
+                            android:singleLine="true"
+                            android:maxLines="1"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_20ssp"
+                            android:textColor="#FCFAFA"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"></TextView>
+                        <TextView
+                            android:id="@+id/tv_album_artist"
+                            android:text="Album Artist"
+                            android:padding="@dimen/_3sdp"
+                            android:textSize="@dimen/_15ssp"
+                            android:singleLine="true"
+                            android:maxLines="1"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="#FCFAFA"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"></TextView>
+                </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>
